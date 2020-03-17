@@ -8,6 +8,7 @@
 	display: none;
 	animation: animation linear 0.1s !important;
 	z-index: 9999999;
+	margin: 0;
 }
 .nav__moblie{
 	position: fixed;
@@ -49,6 +50,10 @@
 	display: block;
 }
 .nav__input:checked ~ .nav__moblie{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.nav__output:checked ~ .nav__moblie{
 	transform: translateX(0%);
 	opacity: 1;
 }

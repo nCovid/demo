@@ -113,3 +113,20 @@ e.preventDefault();
 }    
 });
 });
+
+
+
+
+// lenxuong/
+$('#nav_item_n_mb').click(function () {
+  if ($('#nav_item_n_mb_show').attr('class') == "nav-item-clone-mobile") {
+    $('#nav_item_n_mb_show').addClass('nav-item-clone-mobile_show');
+    $('#nav_link_icon_n').addClass('fa-sort-up');
+    $('#nav_link_icon_n').removeClass('fa-sort-down');
+  } else {
+    $('#nav_item_n_mb_show').removeClass('nav-item-clone-mobile_show');
+    $('#nav_link_icon_n').removeClass('fa-sort-up');
+    $('#nav_link_icon_n').addClass('fa-sort-down');
+  }
+
+});
